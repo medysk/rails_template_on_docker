@@ -1,0 +1,4 @@
+export RAILS_ENV=development
+export APP_NAME=rails-sample
+export APP_ROOT=/usr/src/${APP_NAME}
+export MYSQL_ROOT_PASSWORD=xxxxxxxx
