@@ -1,6 +1,7 @@
 # README
 
 Rrails + MariaDB の開発環境をDockerで構築  
+Git templateでの使用を想定  
 
 ## 事前準備
 
@@ -56,4 +57,5 @@ docker imageをビルドする
 すべてのコンテナを起動(バックグラウンドで実行する場合`-d`オプションを使用する)  
 `docker-compose up`  
 
+Database作成  
 `docker-compose run --rm web rails db:create`  
