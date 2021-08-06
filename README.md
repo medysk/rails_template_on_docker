@@ -35,6 +35,9 @@ rails作成
 # 上書きしたくない場合は、'-f'オプションを外して'rails new'する
 docker-compose run --rm web rails new . -TBGf --database=mysql
 
+docker imageをビルドする  
+`docker-compose build`  
+
 # webpackerのインストール
 docker-compose run --rm web rails webpacker:install
 ```
@@ -50,9 +53,6 @@ host: <%= ENV['DB_HOST'] %>
 ```
 
 ## dockerコンテナとrailsの起動
-
-docker imageをビルドする  
-`docker-compose build`  
 
 すべてのコンテナを起動(バックグラウンドで実行する場合`-d`オプションを使用する)  
 `docker-compose up`  
