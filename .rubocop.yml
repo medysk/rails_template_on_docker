@@ -23,6 +23,9 @@ Rails:
 
 ##################### Style ##################################
 
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 Style/AndOr:
   EnforcedStyle: conditionals
 
