@@ -6,11 +6,11 @@
 AllCops:
   TargetRubyVersion: 3.0
   Exclude:
-    - "vendor/**/*" # rubocop config/default.yml
-    - "db/schema.rb"
-    - "db/fixtures/**/*"
-    - "config/**/*"
-    - "bin/*"
+    - 'vendor/**/*' # rubocop config/default.yml
+    - 'db/schema.rb'
+    - 'db/fixtures/**/*'
+    - 'config/**/*'
+    - 'bin/*'
   DisplayCopNames: true
   NewCops: enable
 
@@ -36,14 +36,14 @@ Style/AsciiComments:
 Style/BlockDelimiters:
   AutoCorrect: false
   Exclude:
-    - "spec/**/*"
+    - 'spec/**/*'
 
 Style/CollectionMethods:
   PreferredMethods:
-    detect: "detect"
-    find: "detect"
-    inject: "inject"
-    reduce: "inject"
+    detect: 'detect'
+    find: 'detect'
+    inject: 'inject'
+    reduce: 'inject'
 
 Style/PreferredHashMethods:
   Enabled: false
@@ -65,8 +65,8 @@ Style/GuardClause:
 
 Style/HashSyntax:
   Exclude:
-    - "**/*.rake"
-    - "Rakefile"
+    - '**/*.rake'
+    - 'Rakefile'
 
 Style/IfUnlessModifier:
   Enabled: false
@@ -88,7 +88,7 @@ Style/RedundantReturn:
 
 Style/Semicolon:
   Exclude:
-    - "spec/**/*"
+    - 'spec/**/*'
 
 Style/SignalException:
   EnforcedStyle: only_raise
@@ -108,6 +108,9 @@ Style/TrailingCommaInArrayLiteral:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Style/EmptyMethod:
+  Enabled: false
+
 ##################### Lint ##################################
 
 Lint/UnderscorePrefixedVariableName:
@@ -125,7 +128,7 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Max: 20
   Exclude:
-    - "db/migrate/*.rb"
+    - 'db/migrate/*.rb'
 
 Metrics/PerceivedComplexity:
   Max: 8
@@ -133,16 +136,16 @@ Metrics/PerceivedComplexity:
 ##################### Layout ##################################
 
 Layout/LineLength:
-  Max: 80
+  Max: 100
   Exclude:
-    - "db/migrate/*.rb"
+    - 'db/migrate/*.rb'
 
 Layout/DotPosition:
   EnforcedStyle: trailing
 
 Layout/ExtraSpacing:
   Exclude:
-    - "db/migrate/*.rb"
+    - 'db/migrate/*.rb'
 
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
