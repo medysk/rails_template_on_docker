@@ -14,6 +14,7 @@ ENV APP_ROOT ${APP_ROOT}
 WORKDIR  ${APP_ROOT}
 
 # gem
+ENV BUNDLE_PATH=${GEM_HOME}
 COPY Gemfile* ./
 RUN bundle install
 
