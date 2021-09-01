@@ -33,13 +33,13 @@ rails作成
 # rails作成
 # 下記コマンドでGemfileとREADME.md(当ファイル)が強制的に上書きされる
 # 上書きしたくない場合は、'-f'オプションを外して'rails new'する
-docker-compose run --rm web rails new . -TBGf --database=mysql
+docker-compose run --rm web bundle exec rails new . -TBGf --database=mysql
 
 docker imageをビルドする  
 `docker-compose build`  
 
 # webpackerのインストール
-docker-compose run --rm web rails webpacker:install
+docker-compose run --rm web bin/rails webpacker:install
 ```
 
 DB接続設定  
@@ -58,4 +58,4 @@ host: <%= ENV['DB_HOST'] %>
 `docker-compose up`  
 
 Database作成  
-`docker-compose run --rm web rails db:create`  
+`docker-compose run --rm web bin/rails db:create`  
