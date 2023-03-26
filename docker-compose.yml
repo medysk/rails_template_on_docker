@@ -31,7 +31,7 @@ services:
     image: ${APP_NAME}
     command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
     ports:
-      - "3000:3000"
+      - "${APP_PORT}:3000"
     volumes:
       - .:${APP_ROOT}
     environment:
